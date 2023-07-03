@@ -2,7 +2,7 @@
 
 import { useParams, Link } from 'react-router-dom';
 import React,{ useState, useEffect, useCallback } from 'react';
-
+import './styles.css'
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -30,7 +30,7 @@ const SingleProduct = () => {
       <div>
         {/* <img src={product.images[0]} /> */}
         <p>DESCRIPTION: {product.description}</p>
-        <span>{product.price} ksh</span>
+        <p>{product.price} ksh</p>
       </div>
 
       <Link to="/">
