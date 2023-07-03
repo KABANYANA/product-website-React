@@ -1,0 +1,21 @@
+input{
+    padding: 20px 90px;
+    border: solid 3px gray;
+    border-radius: 10px;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+button{
+    padding: 15px;
+    background-color: wheat;
+    border: none;
+    border-radius: 15px;
+    margin-left: 3%;
+}
+.add{
+    margin-top: 5%;
+}
+.add h1{
+    text-align: center;
+    margin-bottom: 5%;
+}
