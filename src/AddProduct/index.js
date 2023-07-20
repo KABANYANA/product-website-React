@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import {useState} from 'react'
 import './style.css'
 
@@ -65,11 +65,11 @@ const AddProduct =()=> {
          ADD PRODUCT
         </button>
       
-      <Link to='/products'>
+      {/* <Link to='/products'>
         <button>
           PRODUCTS
         </button>
-      </Link>
+      </Link> */}
 
     </div>
     )

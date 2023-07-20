@@ -1,6 +1,29 @@
 /* h1{
     text-align: center;
 } */
-p ,span{
+/* p ,span{
     text-align: center;
+} */
+
+.single{
+    margin-left: 30%;
+    border: solid 1px rgb(221, 177, 96);
+    width: 40%;
+    margin-top: 3%;
+    border-radius: 20px;
+}
+.single p{
+    text-align: center;
+}
+.single h1{
+    text-align: center;
+}
+.single button{
+    margin-left: 45%;
+}
+.single img{
+    width: 60%;
+    height: 40vh;
+    margin-left: 20%;
+    border-radius: 30px;
 }

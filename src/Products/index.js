@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from "react";
 import { useNavigate, } from "react-router-dom";
 import './style.css'
+
 const Products = () =>{
     const [products, setProducts] = useState([]);
     
@@ -10,6 +11,7 @@ const Products = () =>{
         })();
         getProducts();
     },[])
+
     const getProducts = async()=>{
         try{
             
@@ -27,10 +29,17 @@ const Products = () =>{
     // let { title } = useParams();
     return(
         
-
-        
         <div className="product">
-            
+            <div>
+            <button className="btn" 
+            onClick={() => {
+                navigate("/newproduct");
+              }}
+            >
+                ADD PRODUCT
+            </button>
+ 
+            </div>
           
            {products.map(item =>(
                <div className="content" key={item.id}>
@@ -43,13 +52,13 @@ const Products = () =>{
                     navigate(`/products/${item.id}`);
                   }}
                    >DETAILS</button>
-                    <button className="btn" 
+                    {/* <button className="btn" 
             onClick={() => {
                 navigate("/newproduct");
               }}
             >
                 ADD PRODUCT
-            </button>
+            </button> */}
 
                </div>
            ))

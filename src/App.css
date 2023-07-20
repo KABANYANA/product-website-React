@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+nav{
+  text-align: center;
+  background-color: rgb(221, 177, 96);
+  width: 80%;
+  margin-top: 3%;
+  height: 5vh;
+  margin-left: 10%;
+  padding: 25px;
+  border-radius: 15px;
+}
+nav a{
+  text-decoration: none;
+  margin-left: 5%;
+  color: black;
+  
+}

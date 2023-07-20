@@ -24,19 +24,19 @@ const SingleProduct = () => {
   }, [getProducts]);
 
   return (
-    <>
+    <div className='single'>
    
       <h1> {product.title} </h1>
       <div>
-        {/* <img src={product.images[0]} /> */}
+        <img src={product.thumbnail} />
         <p>DESCRIPTION: {product.description}</p>
         <p>{product.price} ksh</p>
       </div>
 
-      <Link to="/">
+      {/* <Link to="/">
         <button>LOGOUT</button>
-      </Link>
-    </>
+      </Link> */}
+    </div>
   );
 };
 

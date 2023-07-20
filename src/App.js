@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { Link } from 'react-router-dom';
 import './App.css';
 import Login from './Login';
 import Products from './Products';
@@ -11,11 +12,11 @@ function App() {
      {/* <Login/>
      <Products/> */}
      <Router>
-      {/* <nav>
+      <nav>
         <Link to="/"> LOGIN </Link>
         <Link to="/products"> PRODUCTS</Link>
-        <Link to="/description/:id"> PRODUCT DESCRIPTION </Link>
-      </nav> */}
+        {/* <Link to="/description/:id"> PRODU </Link> */}
+      </nav>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/products" element={<Products />} />
